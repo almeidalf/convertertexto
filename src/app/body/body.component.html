@@ -1,0 +1,15 @@
+<div>
+    <h3>TEXTO:</h3>
+    <textarea #texto cols="120" rows="10"></textarea>
+    <div>
+        <button (click)="primeiraLetraMaiscula(texto.value)">1 Letra Maiscula</button>
+        <button (click)="textoMaisculo(texto.value)">Texto Maisculo</button>
+        <button (click)="textoMinusculo(texto.value)">Texto Minusculo</button>
+    </div>
+</div>
+<div >
+    <div>
+        <h3>RESULTADO:</h3>
+        <textarea cols="120" rows="10">{{result}}</textarea>
+    </div>
+</div>

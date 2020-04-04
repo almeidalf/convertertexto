@@ -1,0 +1,15 @@
+<mat-grid-list cols="2" rowHeight = "100px">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <h3 >TEXTO:</h3>
+        <textarea #texto cols="90" rows="10"></textarea>
+        <div>
+            <button (click)="primeiraLetraMaiscula(texto.value)">1 Letra Maiscula</button>
+            <button (click)="textoMaisculo(texto.value)">Texto Maisculo</button>
+            <button (click)="textoMinusculo(texto.value)">Texto Minusculo</button>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <h3>RESULTADO:</h3>
+        <textarea cols="90" rows="10">{{result}}</textarea>
+    </mat-grid-tile>
+</mat-grid-list>

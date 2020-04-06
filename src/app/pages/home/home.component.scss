@@ -1,12 +1,31 @@
-.corposite {
-    align-items: center;
-    background-color: #DCD5D5;
+.container {
+    text-align: center;
+    
 }
 
-.corpotexto {
-    display: inline-table;
+.area {
+    display: inline-block;
+    vertical-align: top;
 }
 
-// .corporesult {
+textarea {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+}
 
-// }
+.botoes {
+    button {
+        font-size: 13px;
+        line-height: 10px;
+        padding: 8px;
+        margin: 2px;
+    }
+}
+
+.sobre {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;;
+}

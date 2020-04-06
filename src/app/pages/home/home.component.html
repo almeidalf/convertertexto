@@ -1,15 +1,29 @@
-<mat-grid-list cols="2" rowHeight = "100px">
-    <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <h3 >TEXTO:</h3>
-        <textarea #texto cols="90" rows="10"></textarea>
-        <div>
-            <button (click)="primeiraLetraMaiscula(texto.value)">1 Letra Maiscula</button>
-            <button (click)="textoMaisculo(texto.value)">Texto Maisculo</button>
-            <button (click)="textoMinusculo(texto.value)">Texto Minusculo</button>
-        </div>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="1" [rowspan]="1">
+<form class="container">
+    <div class="area">
+        <h3>TEXTO:</h3>
+        <textarea #texto cols="100" rows="10"></textarea>
+    </div>
+    <hr>
+    <div class="botoes">
+        <button mat-raised-button color="primary" (click)="textoMaiusculo(texto.value)">TEXTO MAIÚSCULO</button>
+        <button mat-raised-button color="primary" (click)="textoMinusculo(texto.value)">texto minúsculo</button>
+        <button mat-raised-button color="primary" (click)="primeiraLetraMaiuscula(texto.value)">Primeira letra
+            maiúscula</button>
+        <button mat-raised-button color="primary" (click)="primeiraLetraDaStringMaiuscula(texto.value)">Primeira Letra
+            Maiúscula Das Palavras</button>
+        <button mat-raised-button color="primary" (click)="textoAlternadoPrimeiraLetra(texto.value)">TeXtO
+            AlTeRnAdO</button>
+        <button mat-raised-button color="primary" (click)="textoAlternadoSegundaLetra(texto.value)">tExTo
+            aLtErNaDo</button>
+    </div>
+    <hr>
+    <div class="area">
         <h3>RESULTADO:</h3>
-        <textarea cols="90" rows="10">{{result}}</textarea>
-    </mat-grid-tile>
-</mat-grid-list>
+        <textarea cols="100" rows="10">{{result}}</textarea>
+    </div>
+</form>
+<div class="sobre">
+    <p>Caso tenha alguma dúvida ou ideia contate-nos pelo e-mail: <a
+            href="mailto:felipedovale1997@gmail.com">felipedovale1997@gmail.com</a> </p>
+        <p>Esse site foi criado para facilitar sua vida, não esqueça de nos ajudar divulgando para seus amigos também. Obrigado!</p>
+</div>

@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatDividerModule,
-    MatGridListModule
+    MatGridListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
